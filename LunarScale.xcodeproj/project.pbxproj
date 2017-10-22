@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F4BC48D1F9C2975002A8F2E /* LunarScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F4BC48B1F9C2975002A8F2E /* LunarScale.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F2EFDAF1F9C2C7800D5A8FE /* ScaleScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2EFDAE1F9C2C7800D5A8FE /* ScaleScanner.swift */; };
+		5F4BC4961F9C29BD002A8F2E /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BC4951F9C29BD002A8F2E /* Scale.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F2EFDAE1F9C2C7800D5A8FE /* ScaleScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleScanner.swift; sourceTree = "<group>"; };
 		5F4BC4881F9C2975002A8F2E /* LunarScale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LunarScale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F4BC48B1F9C2975002A8F2E /* LunarScale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LunarScale.h; sourceTree = "<group>"; };
-		5F4BC48C1F9C2975002A8F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4BC4951F9C29BD002A8F2E /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +47,8 @@
 		5F4BC48A1F9C2975002A8F2E /* LunarScale */ = {
 			isa = PBXGroup;
 			children = (
-				5F4BC48B1F9C2975002A8F2E /* LunarScale.h */,
-				5F4BC48C1F9C2975002A8F2E /* Info.plist */,
+				5F4BC4951F9C29BD002A8F2E /* Scale.swift */,
+				5F2EFDAE1F9C2C7800D5A8FE /* ScaleScanner.swift */,
 			);
 			path = LunarScale;
 			sourceTree = "<group>";
@@ -59,7 +60,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F4BC48D1F9C2975002A8F2E /* LunarScale.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +95,7 @@
 				TargetAttributes = {
 					5F4BC4871F9C2975002A8F2E = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F2EFDAF1F9C2C7800D5A8FE /* ScaleScanner.swift in Sources */,
+				5F4BC4961F9C29BD002A8F2E /* Scale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +256,7 @@
 		5F4BC4911F9C2975002A8F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +270,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = toto.LunarScale;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +279,7 @@
 		5F4BC4921F9C2975002A8F2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
