@@ -136,7 +136,7 @@ public class ScaleScanner: NSObject, CBCentralManagerDelegate, CBPeripheralDeleg
         scale?.processData(characteristic.value!)
     }
     
-    public override init() {
+    override public init() {
         super.init()
         manager = CBCentralManager(delegate: self, queue: nil)
     }
